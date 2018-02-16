@@ -12,6 +12,49 @@
 	clear: both;
 }
 
+.nav{
+	background-color: #00001a;
+	position: fixed;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	z-index:10;
+	color: white;
+	overflow: hidden;
+
+}
+
+h1{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 34px;
+	text-align: center;
+	padding:10px 0px 5px 0px;
+
+	display: block;
+	width:100%;
+	margin:auto;
+
+}
+h2{
+	display: inline-block;
+	width:100%;
+	margin: auto;
+
+	color: white;
+	font-family: Arial, "Arial", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 1%;
+
+}
+
+span.line{
+	display: block;
+	border-bottom: 2px solid white;
+	width:100%;
+}
+
 body{
 	margin:0;
 	padding:0;
@@ -71,50 +114,21 @@ body::after{
 	right:0;
 	left:0;
 }
-
-.nav{
-	background-color: #00001a;
-	position: fixed;
-	width: 100%;
-	z-index:10;
-	color: white;
-	overflow: hidden;
-
-}
-
-h1{
-	color: white;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 40px;
-	text-align: left;
-	margin-left:70px;
-	padding:10px 0px 5px 0px;
-
-	display: inline-block;
-	float: left;
-}
-
-span.line{
-	display: block;
-	border-bottom: 2px solid white;
-	width:100%;
-}
-
-/*======================= Dropdown styling ===========================*/
+/******************** Dropdown **********************/
 
 .dropdown h3{
 	width:100%;
 
 	color: white;
 	font-family: Arial, "Arial", sans-serif;
-	font-size: 26px;
+	font-size: 18px;
 	text-align: center;
 }
 
 .dropdown h4{
 	color: white;
 	font-family: Arial, "Arial", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
 	padding-bottom: 1%;
 }
@@ -130,19 +144,21 @@ span.line{
 }
 .dropdown-content ul li{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 
 }
 
 .dropbtn {
 	color: white;
-    padding: 14px;
-    border: none;
+/*    padding: 14px;
+*/    border: none;
     cursor: pointer;
     overflow: hidden;
-    margin-top: 5px;
+
+
+   /* margin-top: 5px;
     margin-bottom:5px;
-    margin-left:30px;
+    margin-left:30px;*/
 }
 
 /* Dropdown button on hover & focus */
@@ -152,11 +168,15 @@ span.line{
 }
 
 
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    width:45%;
+    margin:auto;
+    margin-top:5px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     /*margin-left:18px;*/
     float:left;
 }
@@ -195,8 +215,10 @@ span.line{
 	display:block;
 }
 
-
-/*====================================================================*/
+/************************ Content ***************/
+.content{
+	width:100%;
+}
 
 .content p{
 	font-family: 'Open Sans', sans-serif;
@@ -227,110 +249,21 @@ section{
 }
 
 .desc{
-	width: 1100px;
+	width: 80%;
 	margin: auto;
 	text-align: justify;
-
 }
-section#first{
-	margin-top:0px;
-}
+/************** about me image ******************/
 
-
-.about-me .image{
-	
-	width:25%;
-	float:left;
-	position: relative;
-	transition: all .1s ease-in-out;
-	background-color: rgb(0,0,26);
-	padding:1.5%;
+.about-me img{
+	display:block;
+	width:40%;
+	margin:auto;
+	background-color:rgb(0, 0, 26);
+	padding:3%;
+	margin-bottom: 5px;
 }
 
-.about-me .image img{
-	width: 100%;
-	vertical-align: top;
-}
-
-.image:after, .image:before {
-    position:absolute;
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.image:after {
-    content:'\A';
-    width:100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.5);
-}
-.image:before {
-    content: attr(data-content);
-	color:#fff;
-    z-index:1;
-    top:30%;
-    left:5%;
-
-    display: block;
-    width:90%;
-    margin: auto;
-    text-align:justify;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-/*    padding:5px;
-*/    /*font-weight: bold;
-    font-family: 'Work Sans', sans-serif;
-    letter-spacing: 2px;*/
-    -moz-box-sizing:border-box;
-}
-
-.image:hover{
-	z-index: 1;
-}
-.image:hover:after, .image:hover:before {
-    opacity:1;
-}
-
-
-
-
-h2{
-	display: inline-block;
-	width:100%;
-	margin: auto;
-
-	color: white;
-	font-family: Arial, "Arial", sans-serif;
-	font-size: 30px;
-	text-align: center;
-	padding-bottom: 1%;
-
-}
-
-.about-me h2{
-	display: inline-block;
-	width:70%;
-	margin: auto;
-
-	color: white;
-	font-family: Arial, "Arial", sans-serif;
-	font-size: 30px;
-	text-align: center;
-
-/*	margin-left: 2%;
-*/	padding:2% 0 1% 0;	
-}
-
-.about-me .line{
-	display:none;
-}
-
-.about-me p{
-	width:70%;
-	display: inline-block;
-	padding-left:2%;
-}
-div.icons{
 	display:inline-block;
 	font-size:26px;
 	position:absolute;
