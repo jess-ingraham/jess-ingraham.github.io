@@ -1,0 +1,365 @@
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.clear{
+	clear: both;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #00001a;
+}
+
+
+
+header{
+	margin-top:0px;
+	padding-top: 0px;
+	position:relative;
+	display: block;
+	width:100%;
+
+	text-align: center;
+}
+
+.header2{
+	height:70vh;
+	background:linear-gradient(to bottom, rgba(0, 0, 26, 0), rgba(0, 0, 26, 0.6));
+}
+
+body::before{
+	content:"";
+/*	background-color: rgba(0,0,26, 0.5);
+*//*	opacity: 0.8;
+*/
+	/*background:linear-gradient(to bottom, rgba(0, 0, 26, 0.8), rgba(0, 0, 26, 0));*/
+	
+	position:absolute;
+	z-index: -1;
+
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+}
+
+body::after{
+	/*width: 1300px;
+	height:100vh;
+	margin:auto;
+*/	content:"";
+	background-image: url("../images/header_image.jpg");
+	background-size: 100% 100%;
+
+	background-repeat: no-repeat;
+/*	background-position: 50% 20%;
+*/	
+
+	position:fixed;
+	z-index: -2;
+
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+}
+
+.nav{
+	background-color: #00001a;
+	position: fixed;
+	width: 100%;
+	z-index:10;
+	color: white;
+	overflow: hidden;
+
+}
+
+h1{
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+	text-align: left;
+	margin-left:70px;
+	padding:10px 0px 5px 0px;
+
+	display: inline-block;
+	float: left;
+}
+
+span.line{
+	display: block;
+	border-bottom: 2px solid white;
+	width:100%;
+}
+
+/*======================= Dropdown styling ===========================*/
+
+.dropdown h3{
+	width:100%;
+
+	color: white;
+	font-family: Arial, "Arial", sans-serif;
+	font-size: 26px;
+	text-align: center;
+}
+
+.dropdown h4{
+	color: white;
+	font-family: Arial, "Arial", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 1%;
+}
+
+
+.dropdown-content ul{
+	list-style: none;
+	display: inline-block;
+	float:left;
+
+	margin-left: 20px;
+
+}
+.dropdown-content ul li{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+
+}
+
+.dropbtn {
+	color: white;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom:5px;
+    margin-left:30px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus, .dropbtn:hover h3, .dropbtn:focus h3, .dropbtn i:hover {
+    background-color: white;
+    color:black;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /*margin-left:18px;*/
+    float:left;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #00001a;
+    min-width: 160px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: white;
+	color:black;
+}
+
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display:block;
+}
+
+
+/*====================================================================*/
+
+.content p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.content{
+	background-color: rgba(0, 0, 26, 0.6);
+	
+}
+
+section{
+	width:100%;
+/*	background-color: rgb(0, 0, 26);
+	background-color: #00001a;
+*/	padding: 20px 0px;
+	margin-top:40px;
+
+	color:white;
+}
+
+.content h3{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	margin-top: 12px;
+	margin-bottom: 5px;
+
+}
+
+.desc{
+	width: 1100px;
+	margin: auto;
+	text-align: justify;
+
+}
+section#first{
+	margin-top:0px;
+}
+
+
+.about-me .image{
+	
+	width:28%;
+	float:left;
+	position: relative;
+	transition: all .1s ease-in-out;
+}
+
+.about-me .image img{
+	width: 100%;
+	vertical-align: top;
+}
+
+.image:after, .image:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+}
+.image:before {
+    content: attr(data-content);
+	color:#fff;
+    z-index:1;
+    top:30%;
+    left:5%;
+
+    display: block;
+    width:90%;
+    margin: auto;
+    text-align:justify;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+/*    padding:5px;
+*/    /*font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;*/
+    -moz-box-sizing:border-box;
+}
+
+.image:hover{
+	z-index: 1;
+}
+.image:hover:after, .image:hover:before {
+    opacity:1;
+}
+
+
+
+
+h2{
+	display: inline-block;
+	width:100%;
+	margin: auto;
+
+	color: white;
+	font-family: Arial, "Arial", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 1%;
+
+}
+
+.about-me h2{
+	display: inline-block;
+	width:70%;
+	margin: auto;
+
+	color: white;
+	font-family: Arial, "Arial", sans-serif;
+	font-size: 30px;
+	text-align: center;
+
+/*	margin-left: 2%;
+*/	padding:2% 0 1% 0;	
+}
+
+
+.about-me p{
+	width:70%;
+	display: inline-block;
+	padding-left:2%;
+}
+div.icons{
+	display:inline-block;
+	font-size:26px;
+	position:absolute;
+	top:10px;
+	right:20px;
+	color:white;
+}
+
+footer{
+	height:10vh;
+	background-color: rgb(0, 0, 26);
+	margin:20px 0px;
+	padding:10px 0px;
+	text-align: center;
+}
+
+div.icons{
+	display:inline-block;
+	font-size:26px;
+	position:relative;
+	/*position:absolute;*/
+	/*top:10px;
+	right:20px;*/
+	color:white;
+	/*margin-left: 50px;*/
+}
+
+.icons a{
+	color:white;
+}
+
+i{
+	color: white;
+}
+footer p{
+	color:white;
+}
