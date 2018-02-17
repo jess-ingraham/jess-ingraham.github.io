@@ -18,7 +18,9 @@ body{
 	background-color: #00001a;
 }
 
-
+.small-dropdown{
+	display:none;
+}
 
 header{
 	margin-top:0px;
@@ -146,7 +148,7 @@ span.line{
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus, .dropbtn:hover h3, .dropbtn:focus h3, .dropbtn i:hover {
+.dropbtn:hover, .dropbtn:focus, .dropbtn:hover h3, .dropbtn:focus h3, .dropbtn:hover i {
     background-color: white;
     color:black;
 }
@@ -243,7 +245,7 @@ section#first{
 	float:left;
 	position: relative;
 	transition: all .1s ease-in-out;
-	background-color: rgb(0,0,26);
+	background-color: rgba(0,0,26, 0.8);
 	padding:1.5%;
 }
 

@@ -24,6 +24,10 @@
 
 }
 
+.small-dropdown{
+	display:none;
+}
+
 h1{
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
@@ -162,7 +166,7 @@ body::after{
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus, .dropbtn:hover h3, .dropbtn:focus h3, .dropbtn i:hover {
+.dropbtn:hover, .dropbtn:focus, .dropbtn:hover h3, .dropbtn:focus h3, .dropbtn:hover i {
     background-color: white;
     color:black;
 }
