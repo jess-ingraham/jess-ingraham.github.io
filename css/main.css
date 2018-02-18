@@ -88,10 +88,11 @@ h1{
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 40px;
-	text-align: left;
-	margin-left:70px;
-	padding:10px 0px 5px 0px;
-
+	text-align: center;
+/*	margin-left:70px;
+*/	padding:10px 0px 5px 0px;
+	width:28%;
+	margin:0 1%;
 	display: inline-block;
 	float: left;
 }
@@ -103,10 +104,13 @@ span.line{
 }
 
 /*======================= Dropdown styling ===========================*/
-
+.large-dropdown{
+	width:60%;
+	margin-left: 40%;
+}
 .dropdown h3{
 	width:100%;
-
+	margin:auto;
 	color: white;
 	font-family: Arial, "Arial", sans-serif;
 	font-size: 26px;
@@ -126,8 +130,9 @@ span.line{
 	list-style: none;
 	display: inline-block;
 	float:left;
-
-	margin-left: 20px;
+	width:45%;
+	margin-left: 2.5%;
+	text-align: center;
 
 }
 .dropdown-content ul li{
@@ -144,7 +149,7 @@ span.line{
     overflow: hidden;
     margin-top: 5px;
     margin-bottom:5px;
-    margin-left:30px;
+/*    margin-left:30px;*/
 }
 
 /* Dropdown button on hover & focus */
@@ -159,7 +164,8 @@ span.line{
 .dropdown {
     position: relative;
     display: inline-block;
-    /*margin-left:18px;*/
+    width:48%;
+    margin:0 1%;
     float:left;
 }
 
@@ -332,36 +338,40 @@ h2{
 	display: inline-block;
 	padding-left:2%;
 }
-div.icons{
-	display:inline-block;
-	font-size:26px;
-	position:absolute;
-	top:10px;
-	right:20px;
-	color:white;
-}
 
 footer{
-	height:10vh;
+	/*height:14vh;*/
+
 	background-color: rgb(0, 0, 26);
-	margin:20px 0px;
+/*	background:linear-gradient(to bottom, rgba(0, 0, 26, 0.6), rgba(0, 0, 26, 0));
+*/
+	/*margin:20px 0px;*/
 	padding:10px 0px;
 	text-align: center;
 }
 
-div.icons{
+.icons{
 	display:inline-block;
 	font-size:26px;
 	position:relative;
+	text-align: center;
 	/*position:absolute;*/
 	/*top:10px;
 	right:20px;*/
-	color:white;
+	color: white;
 	/*margin-left: 50px;*/
 }
 
+.icons p{
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+
+}
 .icons a{
-	color:white;
+	display: inline-block;
+	float:left;
+	margin:6px 14px 16px 14px;
+	text-decoration: none;
 }
 
 i{
