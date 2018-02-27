@@ -185,7 +185,7 @@ body{
 
 .content p{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: justify;
 }
 
@@ -205,10 +205,17 @@ section{
 
 .content h3{
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 12px;
 	margin-bottom: 5px;
 	text-align: left;
+
+}
+
+.content h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
 
 }
 

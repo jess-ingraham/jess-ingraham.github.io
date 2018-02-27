@@ -228,7 +228,7 @@ body::after{
 
 .content p{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .content{
@@ -251,9 +251,16 @@ section#first{
 }
 .content h3{
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	margin-top: 12px;
 	margin-bottom: 5px;
+
+}
+
+.content h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
 
 }
 
