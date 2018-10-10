@@ -1,234 +1,246 @@
 <!DOCTYPE html>
-<html>
+	<html>
 	<head>
 		<title>Jessica Ingraham</title>
-		<meta charset="utf-8"/>
 
 		
-
-<!-- 		<link rel="stylesheet" type="text/css" href="css/main.css"/>	
- -->
-		<!-- Media query for narrow browser width -->
-		<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css" />
-		 
-		<!-- Media query for smartphones -->
-		<link rel="stylesheet" media="only screen and (max-device-width: 568px)" href="css/mobile.css" />
-		 
-		<!-- Media query for medium browser width -->
-		<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css" />
-		 
-		<!-- Media query for tablets --> 
-		<link rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="css/tablet.css" />
-		 
-		<!-- Media query for full browser width -->
-		<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/main.css" />
-		 
-		<!-- Prevent smartphones from scaling pages down -->
-		<meta name="viewport" content="initial-scale=1">
-
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 
-
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">	
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Nothing+You+Could+Do|Alegreya+SC:800|Bevan|Lato|Open+Sans|Merriweather:700|Noto+Sans" rel="stylesheet">
 
-		
-		<script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="javascript/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
-
 	<body>
-		<div class="container">
-			<header>
-				<div class="nav">
-					<h1>Jessica Ingraham</h1>
+		<div class = "container">
 
-					<div class= 'large-dropdown'>
-						<div class="dropdown">
-							<div class="dropbtn"><h3>Previous Course Work&nbsp;<i class="fa fa-chevron-down"></i></h3></div>
-							<div id="myDropdown" class="dropdown-content">
-								<ul><h4>Database Design</h4>
-									<li><a href="https://jess-ingraham.github.io/data_visualization/">Data Visualization</a></li>
-									<li><a href="database_design_assignments/assignment_5/index.html">SQLite on the Web</a></li>
-									<li><a href="PulseDanceProject/dancer_lookup.html">MySQL on the Web</a></li>
-								</ul>
-								<ul><h4>Intro to Web Design</h4>
-									<li><a href="bootstrap/index.html">Using Brootstrap</a></li>
-								</ul>
-								<div class = "clear"></div>
+			<img class='background' src="images/header_image.jpg">
 
-	 						</div>
-	 						<div class = "clear"></div>
-						</div>
+			<div class = "header">
 
+				<div class="pic-caption"> 
 
-						<div class="dropdown">
-							<div class="dropbtn"><h3>Personal Projects&nbsp;<i class="fa fa-chevron-down"></i></h3></div>
-							<div id="myDropdown" class="dropdown-content">
-								<ul>
-									<li><a href="http://pulsedanceproject.github.io/" target = "_blank">Pulse Dance Project</a></li>
-								</ul>
-								<div class = "clear"></div>
-	 						</div>
-	 						<div class = "clear"></div>
-						</div>
-						<div class="clear"></div>
-					</div>
+					<p id="caption">That's Me!</p>
 
-					<div class='small-dropdown'>
-						<div class = 'dropdown'>
-							<div class="dropbtn outer"><h3><i class="fa fa-bars"></i></h3>
-								<div id="myDropdown" class="dropdown-content">
-
-									<div class="dropdown">
-										<div class="dropbtn"><h3>Previous Course Work&nbsp;<i class="fa fa-chevron-down"></i></h3>
-										</div>
-										<div id="myDropdown" class="dropdown-content">
-											<ul><h4>Database Design</h4>
-												<li><a href="https://jess-ingraham.github.io/data_visualization/">Data Visualization</a></li>
-												<li><a href="database_design_assignments/assignment_5/index.html">SQLite on the Web</a></li>
-												<li><a href="PulseDanceProject/dancer_lookup.html">MySQL on the Web</a></li>
-											</ul>
-											<ul><h4>Intro to Web Design</h4>
-												<li><a href="bootstrap/index.html">Using Brootstrap</a></li>
-											</ul>
-											<div class = "clear"></div>
-
-				 						</div>
-				 						<div class = "clear"></div>
-									</div>
-
-
-									<div class="dropdown">
-										<div class="dropbtn"><h3>Personal Projects&nbsp;<i class="fa fa-chevron-down"></i></h3>
-										</div>
-										<div id="myDropdown" class="dropdown-content">
-											<ul>
-												<li><a href="http://pulsedanceproject.github.io/" target = "_blank">Pulse Dance Project</a></li>
-											</ul>
-											<div class = "clear"></div>
-
-				 						</div>
-				 						<div class = "clear"></div>
-									</div>
-									<div class = "clear"></div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				<div class='clear'></div>
+					<svg id="arrow" xmlns="http://www.w3.org/svg/2000" viewBox="-10 -30 200 200">
+						<defs>
+							<filter id="chalk" height="2" width="1.6" color-interpolation-filters="sRGB" y="-0.5" x="-0.3" filterUnits="objectBoundingBox">
+								<feTurbulence baseFrequency="0.9" seed="115" result="result1" numOctaves="2" type="turbulence"/>
+								<feDisplacementMap scale="3" yChannelSelector="G" in2="result1" xChannelSelector="R" in="SourceGraphic"/>
+							</filter>
+						</defs>
+						<path filter="url(#chalk)" d="M 20,40 q 70,-10 100,50 m 5,5 l 2,-18 m -3,19 l -20, -5" fill="none" stroke="#EEFFEE" stroke-width="1.5" stroke-linecap="round" />
+					</svg>
 				</div>
-				<div class="header2">&nbsp;
+
+
+				<div class="main_header">
+					<div class="images">
+						<img id='img1' src="images/mom_and_me.png">
+						<img id='img2' src="images/about_me_crop.png">
+						<img id='img3' src="images/pulse_crop.png">
+					</div>
+
+
+
+					<div class="about_me">
+						<h1>Welcome</h1>
+						<p>Hi, I'm Jess. I am currently a senior at New York University, graduating in the spring of 2019.
+							I am studying Computer Science in the College of Arts and Science. 
+							<br /><br/>
+							I am currently in a dance club called Pulse Dance Project and you can find a mock website I created
+							for them in the menu under "Personal Projects". This website is not official use but is a project
+							that I work on when I have time and get some inspiration. Because of this, the site is not finished
+							and is in a constant state of updating.
+
+							<!-- <br /> <br /> If you would like to know more about me and my background check out my full "About Me" page
+							from the menu below.
+ -->
+						</p>
+					</div>
 				</div>
-			</header>
-
-			<div class="content">
-				<section id="first">
-					<div class="about-me desc">
-						<a href="#ABT">
-							<div class="image" data-content="Fall of 2017, I was an intern at American Ballet Theatre. I was lucky enough to help staff their Fall Gala at the David H. Koch Theater. To read more about that experience click on this image.">
-								<img id="about-me-pic" src="images/about_me_crop.png" alt="Jessica Ingraham"/>
-							</div>
-						</a>
-						<h2>About Me</h2>
-						<p>
-							I am currently a junior at New York University persuing a bachelor's of arts in computer science with a minor in web development and mathematics. I am currently a tutor for New York University's Computer Science Department. I am a tutor for the Database Design and Web Implementation class under Professor Deena Engel. I am also in a club called Pulse Dance Project, which I created a website for listed under my personal projects above. Pulse is an all-University student run dance club that performs at different events around NYU and also holds its own showcase at the end of every semester.
-							<br/><br/>
-							I grew up in western Massachusetts with my parents and my older brother. I attended Easthampton High School in Easthampton MA, where I was part of the drama club, National Honor Society, and played soccer for a few years. During highschool, I worked at Cinemark Movie Theaters in Hadley, MA as a concession stand employee.
-						</p>
-						
-						<div class="clear"></div>
-						<span class = "line">&nbsp;</span>
-					</div>
-
-				</section>
-
-					
-				<section>
-					<div class="desc">
-						<h2>Previous Jobs and Internships</h2>
-						<h3 id="ABT">American Ballet Theatre</h3>
-						<p>
-							From September to December of 2017, I interned for the Membership department of the American Ballet Theatre in New York. During my internship I assisted in maintaining their Raiser's Edge database by updating donors accounts as well as performing analytics by pulling queries and compiling the results. I also contacted donors about any issues that may have come up during their donation processesing. I assisted in processesing the donation that came into the membership department and the acknowledgement letters that were sent to donors. I worked with the other interns to help set up and facilitate events at the American Ballet Theatre Offices as well as at the Koch Theatre in Lincoln center.
-							<br/><br/>
-							While my time at the American Ballet Theatre was not as technical as I would have wanted it to be, I learned a lot about how companies, especially one that relies on donors, use their data to reach out to donors. There was a lot of analysis about when most people donate and which requests get the most responses. I was also interning when the company was redesigning their website, so I was able to witness what concepts they weren't understanding and how redesigning a website is approached from the client standpoint.
-							</p>
-						<span class = "line">&nbsp;</span>
-						<h3>Easthampton Savings Bank</h3>
-						<p>
-							From June to August of 2017 I interned for the Projects department of bankESB in Easthampton Massachusetts. I worked with the Project Manager and Project Coordinator to assist in upkeeping and implementing new softwares for both employees of the bank, and customers of the bank. For most of the summer, I had a daily task to log all of the complaints that reached the bank from customers about the new bill-pay platform that had recently been changed. I also worked with the IT department to maintain bankESB's intranet where daily annoucnments and important documents are stored. I would add a new post to the main page when a request for a new post was emailed to the IT department. 
-							<br/><br/>
-							The biggest project I worked on during my internship was assisting in implementing a Person-to-Person payment system. I was an intern during the very first meeting with the FinTech and worked all summer on the project with the project coordinator. I sat in meetings with the representatives from the FinTech and COCC to coordinate the release of the product; I created testing guides for in-depth error testing and for other bank employees to test the product; I wrote a white paper for the system; I kept error logs and reported any issues we may have with the product. The department decided at the end of the summer to not use the Person-to-Person system due to errors within the system but being able to see the steps of implementing a new software within a business was invaluable. 
-						</p>
-						<span class = "line">&nbsp;</span>
-						<h3>American Eagle Outfitters</h3>
-						<p>
-							My sophomore year in college I worked at Aerie, a sub-division of American Eagle Outfitters, in New York City. I worked as a Stock Associate but was also trained to work on the sales floor. I worked to keep the stock room and sales floor clean and organized so that customers and associates would be able to find products. I received deliveries and unpacked new products. Towards the end of my time, I was delegating responsibilities to other stock associates and working directly with the store stock lead and store managers to make sure everything stayed up to the proper standards. I eventually left due to the end of the school year.
-							<!-- <br/><br/>
-							Praesent vehicula arcu ullamcorper, lobortis justo ac, consequat mi. Phasellus finibus leo non nulla facilisis blandit. Morbi blandit pellentesque facilisis. Integer et sollicitudin massa. Sed auctor vitae justo sed dignissim. Curabitur lacinia lectus ut turpis elementum, eget feugiat leo interdum. Mauris mollis sem ac eros pharetra, sit amet efficitur metus blandit. Vestibulum efficitur tempus nisl. Suspendisse mi erat, pretium ac porta vitae, aliquet eget turpis. Sed lectus ante, sollicitudin et elementum non, tempor eget massa. Aenean ut congue neque. Integer tincidunt commodo elementum. Proin ac faucibus dolor, vel bibendum nisi.
-						 --></p>
-						<span class = "line">&nbsp;</span>
-
-					</div>
-				</section>
-
-				<section>
-					<div class="desc">
-						<h2>Course Work</h2>
-						<h3>Applied Internet Technology - Spring 2018</h3>
-						<h4>Course Description</h4>
-						<p>
-							This course is a practical introduction to creating modern web applications. It will cover full stack web development - from database design all the way through client side interactivity. Students will use current server and client side web frameworks to build dynamic, data-driven sites. Various tools to support development will also be introduced, such as version control and build systems.
-							<br/><br/>
-							I decided to take this course because I found a love for UI/UX. Like the description said, we covered full stack web devolopment technologies. We covered node.js, server creation from scratch and using express, handlebars, databases such as mongoDB and more. Examples of work from this class will be available on my github at the end of the class as they are currently in private repositories to prevent cheating. This class is one of the most fun classes I have taken.
-
-						</p>
-						<span class = "line">&nbsp;</span>
-
-						<h3>Operating Systems - Spring 2018</h3>
-						<h4>Course Description</h4>
-						<p>
-							This course covers the principles and design of operating systems. Topics include process scheduling and synchronization, deadlocks, memory management including virtual memory, input-output and file systems. Programming assignments.							
-							<br/><br/>							
-						</p>
-						<span class = "line">&nbsp;</span>
-
-						<h3>Computer Systems Organization - Fall 2017</h3>
-						<h4>Course Description</h4>
-						<p>
-							After this course, you should be able to understand what happens under the hood when your computer executes programs. You will be able to visualize the big picture that shows how software and hardware are interrelated. The main goal of this class is to teach you how computers work under-the-hood to execute programs and manipulate data. The course will start with the C programming language, down to assembly and machine-level code, to basic operating system and architectural concepts. 
-							<br/><br/>
-						</p>
-						<span class = "line">&nbsp;</span>
-
-						<h3>Database Design and Web Implementation - Fall 2017</h3>
-						<h4>Course Description</h4>
-						<p>
-							This course introduces principles and applications of database design. Students learn to use a relational database system; implement a Web interface for the users; and write applications using SQL. Students explore principles of database design and apply those principles to computer systems in general and to their respective fields of interest in particular. Students will also become acquainted with other implementations such as SQLite with Python and NoSQL (MongoDB).
-							<br/><br/>
-
-						</p>
-						<span class = "line">&nbsp;</span>
-
-					</div>
-				</section>
 
 			</div>
 
-			<footer>
-				<div class="icons"> 
-					<a href="mailto:Jess.L.Ingraham@gmail.com" target="_blank" title="Jess.L.Ingraham@gmail.com"><i class="fa fa-envelope-o"></i><p>Jess.L.Ingraham @ gmail.com</p></a>
-					<a href="https://twitter.com/jess_ingraham" target="_blank" title="@jess_ingraham"><i class="fa fa-twitter"></i><p>@ jess_ingraham</p></a>
-					<a href="https://www.instagram.com/jess_ingraham/" target="_blank" title="@jess_ingraham"><i class="fa fa-instagram"></i><p>@ jess_ingraham</p></a>
-					<a href="https://github.com/jess-ingraham" target="_blank"><i class="fa fa-github"></i><p>@ jess-ingraham</p></a>
-				</div>
-				<div class="clear"></div>
-				<p class="copy">&copy; 2018 Jessica Ingraham</p>
-				
-			</footer>
+			<nav>
+				<h2>Jessica Ingraham</h2>
+				<ul>
+					<!-- <li>
+						<h3><a href="http://jess-ingraham.github.io/about-me">About Me</a></h3>
+					</li> -->
 
+					<li>
+
+						<div class='dropdown'>
+							<div class="dropbtn">
+								<h3>Previous Course Work&nbsp;<i class="fa fa-chevron-down"></i></h3>
+							</div>
+							<div id="navDrop" class="nav-dropdown">
+								<ul class='droplist'>
+									<li><a href="https://jess-ingraham.github.io/data_visualization/">Data Visualization</a></li>
+									<li><a href="https://jess-ingraham.github.io/using_bootstrap/index.html">Using Brootstrap</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</li>
+
+					<li>
+
+						<div class="dropdown">
+							<div class="dropbtn">
+								<h3>Personal Projects&nbsp;<i class="fa fa-chevron-down"></i></h3>
+							</div>
+							<div id="navDrop" class="nav-dropdown">
+								<ul class="droplist">
+									<li><a href="http://pulsedanceproject.github.io/" target = "_blank">Pulse Dance Project</a></li>
+									<li><a href="https://jess-ingraham.github.io/mothers-day/" target="_blank">Mother's Day 2018</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</li>
+				</ul>
+
+
+			</nav>
+
+			<div class='content'>
+
+				<section id = "internships">
+					<h2>Internships And Job Experience</h2>
+
+					<div id='internOne' class = "box">
+						<h3>Risk Analysis Programmer</h3>
+						<h4>Three Bridges Capital</h4>
+						<p class='date'>June 2018 - Present</p>
+					</div>
+
+
+					<div id="internTwo" class = "box">
+						<h3>TodayTix Concierge</h3>
+						<h4>TodayTix</h4>
+						<p class = 'date'>May 2018 - Present</p>
+					</div>
+
+					<div id = "internThree" class = "box">
+						<h3>Tutor - Database Design</h3>
+						<h4>NYU Computer Science Department</h4>
+						<p class='date'>January 2018 - May 2018</p>
+					</div>
+
+
+					<div id="internRowOne" class="dropdown-content">
+
+					</div>
+
+					<div id="internFour" class = "box">
+						<h3>Membership Intern</h3>
+						<h4>American Ballet Theater</h4>
+						<p class='date'>September 2017 - December 2017</p>
+
+					</div>
+
+					<div id= "internFive" class = "box">
+						<h3>Operations Intern</h3>
+						<h4>BankESB</h4>
+						<p class='date'>June 2017 - August 2017</p>
+
+					</div>
+
+					<div id="internSix" class = "box">
+						<h3>Stock Employee</h3>
+						<h4>American Eagle Outfitters</h4>
+						<p class='date'>November 2016 - May 2017</p>
+					</div>
+
+					<div id="internRowTwo" class="dropdown-content">
+							
+					</div>
+
+					<div id= "internSeven" class = "box">
+						<h3>Concession Stand Employee</h3>
+						<h4>Cinemark Movie Theater</h4>
+						<p class='date'>August 2013 - August 2016</p>
+					</div>
+
+					<div id="internRowThree" class="dropdown-content">
+					
+					</div>
+
+				</section>
+
+
+				<section id = "Courses">
+					<h2>Past Relevant Courses</h2>
+					<div id='classOne' class = "box">
+						<h3>Data Analysis And Management</h3>
+						<h4>Fall 2018</h4>
+					</div>
+
+					<div id='classTwo' class = "box">
+						<h3>Large Scale Web Applications</h3>
+						<h4>Fall 2018</h4>
+					</div>
+
+					<div id='classThree' class = "box">
+						<h3>Projects in Programming</h3>
+						<h4>Fall 2018</h4>
+					</div>
+
+					<div id="classesRowOne" class="dropdown-content">
+					
+					</div>
+
+					<div id='classFour' class = "box">
+						<h3>Applied Internet Technology</h3>
+						<h4>Spring 2018</h4>
+					</div>
+
+					<div id='classFive' class = "box">
+						<h3>Computer Systems Orgranization</h3>
+						<h4>Spring 2018</h4>
+					</div>
+
+					<div id='classSix' class = "box">
+						<h3>Operating Systems</h3>
+						<h4>Fall 2017</h4>
+					</div>
+
+					<div id="classesRowTwo" class="dropdown-content">
+					
+					</div>
+
+					<div id='classSeven' class = "box">
+						<h3>Database Design And Web Implementation</h3>
+						<h4>Fall 2017</h4>
+					</div>
+
+					<div id="classesRowThree" class="dropdown-content">
+					
+					</div>
+
+
+				</section>
+
+				<section id="resume">
+					<a download="Jessica Ingraham Resume" href="documents/JessicaIngraham_resume.pdf"><h2>Click here to download my current resume - As of October 4<sup>th</sup>, 2018<h2></a>
+				</section>
+			</div>
+
+			<footer>
+				About this site: I created this website completely from scratch and 
+				more examples of my work can be found in the menu above. This website is 
+				static as GitHub does not allow for databases. The source code for the site
+				can be found at <a href="https://github.com/jess-ingraham/jess-ingraham.github.io">my github</a>
+				<!-- <a href="https://www.freepik.com/free-photos-vectors/infographic">Infographic vector arrow created by Freepik</a>
+				<a href='https://www.freepik.com/free-vector/hand-drawn-arrow-collection_1217486.htm'>Designed by Freepik</a> -->
+			</footer>
 		</div>
 
+		<div class='banner-bottom'>
+			<span class='important'>!</span> This site is currently under construction. Styling is being updated, links are being added, and I am working on making the page responsive <span class='important'>!</span>
+		</div>
 	</body>
 </html>
