@@ -3,233 +3,318 @@
 	<head>
 		<title>Jessica Ingraham</title>
 
-		
+		<meta charset="utf-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 		<link rel="shortcut icon" href="images/favicon.ico"/>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Bitter|Nothing+You+Could+Do|Alegreya+SC:800|Bevan|Lato|Open+Sans|Merriweather:700|Noto+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/cssfamily=Bitter|Nothing+You+Could+Do|Alegreya+SC:800|Bevan|Lato|Open+Sans|Merriweather:700|Noto+Sans" rel="stylesheet" />
+        
 
-
+<!--
 		<script type="text/javascript" src="js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+-->
+		
 
 	</head>
 	<body>
+        
 		<div class = "container">
+            
+            <header>
+<!--                <div class="background">
+                    <img class='background-img' src="images/header_image.jpg">
+                </div>-->
+                
+                <div class = "main-header">
 
-			<img class='background' src="images/header_image.jpg">
+<!--
+                    <div class="pic-caption"> 
 
-			<div class = "header">
+                        <p id="caption">That's Me!</p>
 
-				<div class="pic-caption"> 
+                        <svg id="arrow" xmlns="http://www.w3.org/svg/2000" viewBox="-10 -30 200 200">
+                            <defs>
+                                <filter id="chalk" height="2" width="1.6" color-interpolation-filters="sRGB" y="-0.5" x="-0.3" filterUnits="objectBoundingBox">
+                                    <feTurbulence baseFrequency="0.9" seed="115" result="result1" numOctaves="2" type="turbulence"/>
+                                    <feDisplacementMap scale="3" yChannelSelector="G" in2="result1" xChannelSelector="R" in="SourceGraphic"/>
+                                </filter>
+                            </defs>
+                            <path filter="url(#chalk)" d="M 20,40 q 70,-10 100,50 m 5,5 l 2,-18 m -3,19 l -20, -5" fill="none" stroke="#EEFFEE" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
 
-					<p id="caption">That's Me!</p>
-
-					<svg id="arrow" xmlns="http://www.w3.org/svg/2000" viewBox="-10 -30 200 200">
-						<defs>
-							<filter id="chalk" height="2" width="1.6" color-interpolation-filters="sRGB" y="-0.5" x="-0.3" filterUnits="objectBoundingBox">
-								<feTurbulence baseFrequency="0.9" seed="115" result="result1" numOctaves="2" type="turbulence"/>
-								<feDisplacementMap scale="3" yChannelSelector="G" in2="result1" xChannelSelector="R" in="SourceGraphic"/>
-							</filter>
-						</defs>
-						<path filter="url(#chalk)" d="M 20,40 q 70,-10 100,50 m 5,5 l 2,-18 m -3,19 l -20, -5" fill="none" stroke="#EEFFEE" stroke-width="1.5" stroke-linecap="round" />
-					</svg>
-				</div>
-
-
-				<div class="main_header">
-					<div class="images">
-						<img id='img1' src="images/mom_and_me.png">
-						<img id='img2' src="images/about_me_crop.png">
-						<img id='img3' src="images/pulse_crop.png">
-					</div>
-
-
-
-					<div class="about_me">
-						<h1>Welcome</h1>
-						<p>Hi, I'm Jess. I am currently a senior at New York University, graduating in the spring of 2019.
-							I am studying Computer Science in the College of Arts and Science. 
-							<br /><br/>
-							I am currently in a dance club called Pulse Dance Project and you can find a mock website I created
-							for them in the menu under "Personal Projects". This website is not official use but is a project
-							that I work on when I have time and get some inspiration. Because of this, the site is not finished
-							and is in a constant state of updating.
-
-							<!-- <br /> <br /> If you would like to know more about me and my background check out my full "About Me" page
-							from the menu below.
- -->
-						</p>
-					</div>
-				</div>
-
-			</div>
-
-			<nav>
-				<h2>Jessica Ingraham</h2>
-				<ul>
-					<!-- <li>
-						<h3><a href="http://jess-ingraham.github.io/about-me">About Me</a></h3>
-					</li> -->
-
-					<li>
-
-						<div class='dropdown'>
-							<div class="dropbtn">
-								<h3>Previous Course Work&nbsp;<i class="fa fa-chevron-down"></i></h3>
-							</div>
-							<div id="navDrop" class="nav-dropdown">
-								<ul class='droplist'>
-									<li><a href="https://jess-ingraham.github.io/data_visualization/">Data Visualization</a></li>
-									<li><a href="https://jess-ingraham.github.io/using_bootstrap/">Using Brootstrap</a></li>
-									<li><a href="https://jess-ingraham.github.io/dice-game/">A Simple Dice Game</a></li>
-								</ul>
-							</div>
-						</div>
-
-					</li>
-
-					<li>
-
-						<div class="dropdown">
-							<div class="dropbtn">
-								<h3>Personal Projects&nbsp;<i class="fa fa-chevron-down"></i></h3>
-							</div>
-							<div id="navDrop" class="nav-dropdown">
-								<ul class="droplist">
-									<li><a href="http://pulsedanceproject.github.io/" target = "_blank">Pulse Dance Project</a></li>
-									<li><a href="https://jess-ingraham.github.io/mothers-day/" target="_blank">Mother's Day 2018</a></li>
-								</ul>
-							</div>
-						</div>
-
-					</li>
-				</ul>
+                        <div class="images">
+                            <img id='img1' src="images/mom_and_me.png">
+                            <img id='img2' src="images/about_me_crop.png">
+                            <img id='img3' src="images/pulse_crop.png">
+                        </div>
+-->
 
 
-			</nav>
+
+                    <div class="about-me">
+                        <h1>Welcome</h1>
+                        <p>Hi, I'm Jess. I am currently a senior at New York University, graduating in the spring of 2019.
+                            I am studying Computer Science in the College of Arts and Science. 
+                            <br /><br/>
+                            I am currently in a dance club called Pulse Dance Project and you can find a mock website I created for them in the menu under "Personal Projects". This website is not official use but is a project that I work on when I have time and get some inspiration. Because of this, the site is not finished and is in a constant state of updating.
+
+                            <!-- <br /> <br /> If you would like to know more about me and my background check out my full "About Me" page from the menu below.-->
+ 
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+                
+            </header>
+
+
+<!--                <nav>
+                    <h2>Jessica Ingraham</h2>
+                    <ul>
+
+                        <li>
+
+                            <div class='dropdown'>
+                                <div class="dropbtn">
+                                    <h3>Previous Course Work&nbsp;<i class="fa fa-chevron-down"></i></h3>
+                                </div>
+                                <div id="navDrop" class="nav-dropdown">
+                                    <ul class='droplist'>
+                                        <li><a href="https://jess-ingraham.github.io/data_visualization/">Data Visualization</a></li>
+                                        <li><a href="https://jess-ingraham.github.io/using_bootstrap/">Using Brootstrap</a></li>
+                                        <li><a href="https://jess-ingraham.github.io/dice-game/">A Simple Dice Game</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <div class="dropdown">
+                                <div class="dropbtn">
+                                    <h3>Personal Projects&nbsp;<i class="fa fa-chevron-down"></i></h3>
+                                </div>
+                                <div id="navDrop" class="nav-dropdown">
+                                    <ul class="droplist">
+                                        <li><a href="http://pulsedanceproject.github.io/" target = "_blank">Pulse Dance Project</a></li>
+                                        <li><a href="https://jess-ingraham.github.io/mothers-day/" target="_blank">Mother's Day 2018</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+                </nav>-->
+                
+                
+            
 
 			<div class='content'>
 
 				<section id = "internships">
 					<h2>Internships And Job Experience</h2>
 
-					<div id='internOne' class = "box">
-						<h3>Risk Analysis Programmer</h3>
-						<h4>Three Bridges Capital</h4>
-						<p class='date'>June 2018 - December 2018</p>
+					<div class = "box">
+                        
+                        <div class="info">
+						  <h3>Risk Analysis Programmer</h3>
+						  <h4>Three Bridges Capital</h4>
+						  <p class='date'>June 2018 - December 2018</p>
+                        </div>
+                        
+                        <div class="description">
+                            Three Bridges Capital is a European Hedge Fund. Currently the prgramming team is working on building an accounting system and bringing their accounting in house. My job is building, altering, and maintaing tables, views, and stored procedures for the database side. I also log errors in the data and create stored procedures to update data when the end user fixes the error (ie if a new country code is not listed in our table already, an error is logged. Once that country code is accounted for, the stored procedure finds all the rows that had that country code and updates it.)<br /><br /> This internship is a lot of SQL and data processing and I learned a lot about production side databases. Starting this internship was my first exposure to a large data warehouse and really showed me how to break down information for ease of use and readability.
+                        </div>
+                        
 					</div>
 
 
-					<div id="internTwo" class = "box">
-						<h3>TodayTix Concierge</h3>
-						<h4>TodayTix</h4>
-						<p class = 'date'>May 2018 - December 2018</p>
+					<div class = "box">
+                        
+                        <div class="info">
+						  <h3>TodayTix Concierge</h3>
+						  <h4>TodayTix</h4>
+						  <p class = 'date'>May 2018 - December 2018</p>
+                        </div>
+                        
+                        <div class="description">
+                            TodayTix is an online ticketing agency that sells tickets to Broadway and Off-Broadway shows, and events around New York City as well as other countries. My job as a concierge agent is to wait at the theater before showtime and deliver the tickets to customers that have purchased them. We also check all of the tickets for customers and report any descrepincies (i.e wrong date/time/show, party not seated together).
+                        </div>
+                        
 					</div>
 
-					<div id = "internThree" class = "box">
-						<h3>Tutor - Database Design</h3>
-						<h4>NYU Computer Science Department</h4>
-						<p class='date'>January 2018 - May 2018</p>
+					<div class = "box">
+                        <div class="info">
+                            <h3>Tutor - Database Design</h3>
+                            <h4>NYU Computer Science Department</h4>
+                            <p class='date'>January 2018 - May 2018</p>
+                        </div>
+                        
+                        <div class="description">
+                            I tutored for the NYU course Database Design And Web Implementation, a course I had taken previously. This class is taught with python, SQLlite, mySQL, and some mongoDB. The students learn to scrub data files without using pandas or numpy and then those libraries are used at the end of the course. This way, students understand how to read in, filter, and scrub text/csv files. Students also learn how to use python to connect to an SQL database and template a webpage based on results.<br /><br /> My job was to tutor all the students. I would help debug assignemnts as well as talk through solutions or ideas and the best ways to set up databases that would be effective. I also helped students with test review and ans
+                        </div>
+                        
 					</div>
 
 
-					<div id="internRowOne" class="dropdown-content">
+					<div class = "box">
+                        <div class="info">
+                            <h3>Membership Intern</h3>
+                            <h4>American Ballet Theater</h4>
+						  <p class='date'>September 2017 - December 2017</p>
+                        </div>
+                        
+                        <div class="description">
+                            From September to December of 2017, I interned for the Membership department of the American Ballet Theatre in New York. During my internship I assisted in maintaining their Raiser's Edge database by updating donors accounts as well as performing analytics by pulling queries and compiling the results. I also contacted donors about any issues that may have come up during their donation processesing. I assisted in processesing the donation that came into the membership department and the acknowledgement letters that were sent to donors. I worked with the other interns to help set up and facilitate events at the American Ballet Theatre Offices as well as at the Koch Theatre in Lincoln center. <br /><br/>While my time at the American Ballet Theatre was not as technical as I would have wanted it to be, I learned a lot about how companies, especially one that relies on donors, use their data to reach out to donors. There was a lot of analysis about when most people donate and which requests get the most responses. I was also interning when the company was redesigning their website, so I was able to witness what concepts they weren't understanding and how redesigning a website is approached from the client standpoint.
+                        </div>
 
 					</div>
 
-					<div id="internFour" class = "box">
-						<h3>Membership Intern</h3>
-						<h4>American Ballet Theater</h4>
-						<p class='date'>September 2017 - December 2017</p>
+					<div class = "box">
+                        
+                        <div class="info">
+						  <h3>Operations Intern</h3>
+						  <h4>BankESB</h4>
+						  <p class='date'>June 2017 - August 2017</p>
+                        </div>
+                        
+                        <div class="description">
+                            From June to August of 2017 I interned for the Projects department of bankESB in Easthampton Massachusetts. I worked with the Project Manager and Project Coordinator to assist in upkeeping and implementing new softwares for both employees of the bank, and customers of the bank. For most of the summer, I had a daily task to log all of the complaints that reached the bank from customers about the new bill-pay platform that had recently been changed. I also worked with the IT department to maintain bankESB's intranet where daily annoucnments and important documents are stored. I would add a new post to the main page when a request for a new post was emailed to the IT department.<br/><br/>The biggest project I worked on during my internship was assisting in implementing a Person-to-Person payment system. I was an intern during the very first meeting with the FinTech and worked all summer on the project with the project coordinator. I sat in meetings with the representatives from the FinTech and COCC to coordinate the release of the product; I created testing guides for in-depth error testing and for other bank employees to test the product; I wrote a white paper for the system; I kept error logs and reported any issues we may have with the product. The department decided at the end of the summer to not use the Person-to-Person system due to errors within the system but being able to see the steps of implementing a new software within a business was invaluable.
+                        </div>
 
 					</div>
 
-					<div id= "internFive" class = "box">
-						<h3>Operations Intern</h3>
-						<h4>BankESB</h4>
-						<p class='date'>June 2017 - August 2017</p>
-
+					<div class = "box">
+                        <div class="info">
+						  <h3>Stock Employee</h3>
+						  <h4>American Eagle Outfitters</h4>
+						  <p class='date'>November 2016 - May 2017</p>
+                        </div>
+                        
+                        <div class="description">
+                            My sophomore year in college I worked at Aerie, a sub-division of American Eagle Outfitters, in New York City. I worked as a Stock Associate but was also trained to work on the sales floor. I worked to keep the stock room and sales floor clean and organized so that customers and associates would be able to find products. I received deliveries and unpacked new products. Towards the end of my time, I was delegating responsibilities to other stock associates and working directly with the store stock lead and store managers to make sure everything stayed up to the proper standards. I eventually left due to the end of the school year.
+                        </div>
+                        
 					</div>
 
-					<div id="internSix" class = "box">
-						<h3>Stock Employee</h3>
-						<h4>American Eagle Outfitters</h4>
-						<p class='date'>November 2016 - May 2017</p>
-					</div>
-
-					<div id="internRowTwo" class="dropdown-content">
-							
-					</div>
-
-					<div id= "internSeven" class = "box">
-						<h3>Concession Stand Employee</h3>
-						<h4>Cinemark Movie Theater</h4>
-						<p class='date'>August 2013 - August 2016</p>
-					</div>
-
-					<div id="internRowThree" class="dropdown-content">
-					
+					<div class = "box">
+                        <div class="info">
+						  <h3>Concession Stand Employee</h3>
+						  <h4>Cinemark Movie Theater</h4>
+						  <p class='date'>August 2013 - August 2016</p>
+                        </div>
+                        
+                        <div class="description">
+                            Cinemark was a great first job. I served customers and answered questions while efficiently filling orders. I learned how to stay calm under high pressure situations, especially when we would get lines of 50-70 poeple all waiting to be served. By the end of my time there, I was acting in a supervisory position, delegating roles and being a go-between for co-workers and manangers.
+                        </div>
+                        
 					</div>
 
 				</section>
 
 
 				<section id = "Courses">
-					<h2>Past Relevant Courses</h2>
-					<div id='classOne' class = "box">
-						<h3>Data Analysis And Management</h3>
-						<h4>Fall 2018</h4>
+					<h2>Courses</h2>
+                    
+					<div class = "box">
+                        <div class="info">
+						  <h3>Data Analysis And Management</h3>
+						  <h4>Fall 2018</h4>
+                        </div>
+                        
+                        <div class="description">
+                            From course description: Extracting, transforming and analyzing data in myriad formats with traditional relational databases as well as non-relational databases. Data modeling, cloud databases, and API programming. Garnering insights using Python and current data analysis tools and libraries.<br /><br />This course so far has involved scrubbing data in python. We have used pandas and numpy to analyse data and we have created our own version of a pandas-like library.
+                        </div>
+                        
 					</div>
 
-					<div id='classTwo' class = "box">
-						<h3>Large Scale Web Applications</h3>
-						<h4>Fall 2018</h4>
+					<div class = "box">
+                        <div class="info">
+                            <h3>Large Scale Web Applications</h3>
+                            <h4>Fall 2018</h4>
+                        </div>
+                        
+                        <div class="description">
+                            From course description: This class will examine the challenges of scaling up a data-centric web application to serve millions of users. Students will learn and apply distributed computing concepts as they convert a simple single-node web application to a scalable distributed architecture, with an emphasis on back-end components. Students will be introduced to the practice of scaling by distribution, and the exercises will have students apply a combination of popular open source technologies and code newly written by them, as they continue to augment the service.<br/><br/>This course focuses on scaling web technologies including servers, both hardware and software, databases, and web monitoring tools. Our current assignemt is to write a prober that every 30 seconds will check the status of a website.
+                        </div>
+                        
 					</div>
 
-					<div id='classThree' class = "box">
-						<h3>Projects in Programming</h3>
-						<h4>Fall 2018</h4>
+					<div class = "box">
+                        <div class="info">
+						  <h3>Projects in Programming</h3>
+						  <h4>Fall 2018</h4>
+                            
+                        </div>
+                        
+                        <div class="description">
+                            From course description: In this class, the goal of the project for this class is to build a data product. We will discuss more what this means, but at the minimum we expect the final deliverable to give the ability to users to interact with the project (through a chatbot, or through a web front end), and allow the users to get something meaningful from the underlying data.<br/><br/>So far we have used api's to get ingormation from a website and used the watson nlp api to analyse the sentiment and emotion. We have used regular expression to scrape websites. My team and I are currently working on ideas for our final project.
+                        </div>
+                        
 					</div>
 
-					<div id="classesRowOne" class="dropdown-content">
-					
+					<div class = "box">
+                        <div class="info">
+						  <h3>Applied Internet Technology</h3>
+						  <h4>Spring 2018</h4>
+                        </div>
+                        
+                         <div class="description">
+                            This course is a practical introduction to creating modern web applications. It will cover full stack web development - from database design all the way through client side interactivity. Students will use current server and client side web frameworks to build dynamic, data-driven sites. Various tools to support development will also be introduced, such as version control and build systems. 
+                            <br/><br/>
+                            I decided to take this course because I found a love for UI/UX and creating website. Like the description said, we covered full stack web devolopment technologies. We covered node.js, server creation from scratch, using the net module, and using express, handlebars, databases such as mongoDB and more. Examples of work from this class will be available on my github at the end of the class as they are currently in private repositories to prevent cheating. This class is one of the most fun classes I have taken.
+                        </div>
+                        
 					</div>
 
-					<div id='classFour' class = "box">
-						<h3>Applied Internet Technology</h3>
-						<h4>Spring 2018</h4>
+					<div class = "box">
+                        <div class="info">
+						  <h3>Computer Systems Orgranization</h3>
+						  <h4>Spring 2018</h4>
+                        </div>
+                        
+                        <div class="description">
+                            From course description: This course covers the principles and design of operating systems. Topics include process scheduling and synchronization, deadlocks, memory management including virtual memory, input-output and file systems. Programming assignments.
+                        </div>
 					</div>
 
-					<div id='classFive' class = "box">
-						<h3>Computer Systems Orgranization</h3>
-						<h4>Spring 2018</h4>
+					<div class = "box">
+                        <div class="info">
+						  <h3>Operating Systems</h3>
+						  <h4>Fall 2017</h4>
+                        </div>
+                        
+                        <div class="description">
+                            From course description: After this course, you should be able to understand what happens under the hood when your computer executes programs. You will be able to visualize the big picture that shows how software and hardware are interrelated. The main goal of this class is to teach you how computers work under-the-hood to execute programs and manipulate data. The course will start with the C programming language, down to assembly and machine-level code, to basic operating system and architectural concepts.
+                        </div>
 					</div>
 
-					<div id='classSix' class = "box">
-						<h3>Operating Systems</h3>
-						<h4>Fall 2017</h4>
-					</div>
-
-					<div id="classesRowTwo" class="dropdown-content">
-					
-					</div>
-
-					<div id='classSeven' class = "box">
+					<div class = "box">
+                        <div class="info">
 						<h3>Database Design And Web Implementation</h3>
 						<h4>Fall 2017</h4>
-					</div>
-
-					<div id="classesRowThree" class="dropdown-content">
-					
+                        </div>
+                        
+                        <div class="description">
+                            This course was an introductory course to databases and database design. We used SQLite and mySQL for databases and used python to format the data on a webpage. This class focused on how to properly model a database based on information given and what that information would be used for. I became a tutor for this course the following semester.
+                        </div>
 					</div>
 
 
 				</section>
 
 				<section id="resume">
-					<a download="Jessica Ingraham Resume" href="documents/JessicaIngraham_resume.pdf"><h2>Click here to download my current resume - As of October 4<sup>th</sup>, 2018<h2></a>
+                    <a download="Jessica Ingraham Resume" href="documents/JessicaIngraham_resume.pdf">
+                        <h2>Click here to download my current resume - As of October 4<sup>th</sup>, 2018</h2>
+                    </a>
 				</section>
 			</div>
 

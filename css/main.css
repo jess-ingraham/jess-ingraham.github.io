@@ -1,464 +1,87 @@
-/******* GENERAL *****/
-*{
-	margin:0;
-	padding:0;
-	font-size: 100%;
-	border-collapse: collapse;
-	box-sizing: border-box;
-	text-decoration: none;
-	list-style: none;
-	color:black;
-	/*vertical-align: baseline;*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700");
+* {
+  font-size: 100%;
+  width: 100%;
+  color: black;
+  background-color: transparent;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-.fixed{
-	position: fixed;
+header {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header_image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header .main-header {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+header .main-header .about-me {
+  width: 100%;
+  margin: auto;
+}
+header .main-header .about-me h1 {
+  color: white;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 4em;
+  padding: 2%;
+  text-transform: uppercase;
+}
+header .main-header .about-me p {
+  width: 50%;
+  margin: auto;
+  color: white;
+  text-align: justify;
 }
 
-a:hover{
-	text-decoration: none;
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: baseline;
+}
+nav .nav-dropdown {
+  display: none;
 }
 
-body{
-	margin:0;
-	padding:0;
+.content {
+  background-color: white;
+  padding: 5% 5%;
+}
+.content h2 {
+  font-family: "Merriweather", serif;
+  margin: 2% auto;
+  font-size: 2em;
+}
+.content .box {
+  margin: 0 auto 2% auto;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1% 4%;
+}
+.content .box .description {
+  display: block;
+  margin: 2% auto;
 }
 
-@font-face {
-    font-family: "Neutra-Text";
-    src: url(../NeutraText-LightAlt.ttf) format("truetype");
+footer {
+  background-color: white;
 }
 
-.hidden{
-	display: none;
-}
-
-a > li:hover{
-	text-decoration: underline;
-}
-
-h1{
-	text-align: center;
-	font-family: 'Neutra-Text', sans-serif;
-	font-size: 3vw;
-	color:#D4AF37;	
-	padding:0 0.8em;
-
-}
-
-
-
-.content{
-	background-color: white;
-	padding:2% 0;
-}
-
-section{
-	position:relative;
-}
-
-h2{
-	font-family: "Neutra-Text";
-	font-size:4.4vw;
-	color:#D4AF37;
-	border-bottom: 2px solid #D4AF37;
-	padding:1.5% 0;
-	margin-bottom:1%;
-}
-h3{
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 300;
-	font-size: 1.5em;
-	color:white;
-	width:90%;
-	margin:0;
-	padding-left:1%;
-	background-color:rgba(0, 0, 0, 0.7);
-	text-align: left;
-
-	display: inline-block;
-/*	height: 8vh;
-*/	line-height: 8vh;
-}
-
-p{
-	width:70%;
-	margin:auto;
-	font-family: "Kanit",sans-serif;
-	font-weight: bold;
-	font-size: 2vw;
-}
-
-/*********** HEADER  ************/
-
-header{
-	position:sticky;
-	top:0;
-	left:0;
-	z-index: -1;
-	height:100vh;
-	overflow: hidden;
-}
-
-
-
-header video, header .headerImg{
-	width:100%;
-	height:100vh;
-	
-	object-fit: cover;
-	background-color: black;
-	overflow: hidden;
-
-}
-
-/*For pages with text over the image*/
-
-.over{
-	width:100%;
-	height:100vh;
-	position: absolute;
-	top: 0;
-	left:0;
-	background-color:rgb(0,0,0);
-	background-color:rgba(0,0,0,0.6);
-	z-index: 1;
-}
-
-h1.title{
-	width:100%;
-	text-align: center;
-	font-family: 'Neutra-Text', sans-serif;
-	color:white;
-	font-size: 80px;
-	letter-spacing: 20px;
-	line-height: 65vh;
-}
-
-p.credit{
-	position: absolute;
-	bottom:2%;
-	left:1%;
-	color:white;
-	z-index: 2;
-	font-size: 1em;
-}
-
-/*Image Overlay*/
-
-.image img{
-	width:100%;
-}
-
-.image{
-	position:relative;
-	/*display: inline-block;*/
-	transition: all .2s ease-in-out;
-}
-
-
-.image:after, .image:before {
-    position:absolute;
-    opacity:1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.image:after {
-    content:'\A';
-    width:100%; height:99%;
-    top:0; left:0;
-    /*background:rgba(0,0,0,0.6);*/
-    background:radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
-}
-.image:before {
-    content: attr(data-content);
-    width:100%;
-    color:#fff;
-    z-index:1;
-    top:44%;
-    text-align:center;
-    font-size: 2vw;
-    font-weight: 400;
-    font-family: 'Work Sans', sans-serif;
-   /* letter-spacing: 2px;*/
-    -moz-box-sizing:border-box;
-    background-color: rgba(0,0,0,1);
-}
-.image:hover{
-	z-index: 100;
-	transform: scale(1.04);
-}
-.image:hover:after{
-	background:radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
-}
-
-.image:hover:before {
-    display: none;
-}
-
-/***********/
-
-footer{
-/*	margin-top: 40px;
-*/	background-color:rgb(102, 102, 102);
-	text-align: center;
-}
-
-.icons{
-	margin-left: 10px;
-	font-size: 40px;
-	color:white;
-	letter-spacing: 20px;
-	padding:10px 0px;
-}
-.icons i{
-	color:white;
-	opacity: 0.7;
-}
-.icons i:hover{
-	opacity: 1;
-}
-
-.copy{
-	font-size: 1.2em;
-}
-
-footer p{
-	font-size: 1.2em;
-}
-
-/***********Nav*/
-
-nav{
-	background-color: white;
-	z-index: 1000;
-	position: sticky;
-	width:100%;
-	top:0;
-	left:0;
-	box-shadow: 2px 0px 4px black;
-
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
-}
-
-
-div.small-screen{
-	display: none;
-}
-
-
-ul.large-screen{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-end;
-
-	padding:0 0.6em;
-
-}
-
-nav ul li{
-
-	text-align:center;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 1.8vw;
-	padding:0 1.2em;
-
-}
-
-
-li.selected{
-	color:#D4AF37; 
-	/*font-size: 1.1em;*/
-	border-bottom: 2px solid #D4AF37;
-}
-
-li.selected:hover{
-	text-decoration: none;
-}
-
-/*********************************************/
-
-
-/*********small screens********/
-
-@media (max-width: 700px){
-	ul.large-screen{
-		display: none;
-	}
-
-	div.small-screen{
-		display: flex;
-		flex:20%;
-/*		align-content: center;
-*/		justify-content: center;
-		align-items: center;
-
-	}
-	i#menu-button{
-		font-size: 5.4vw;
-		color:#D4AF37;
-	}
-
-	i:hover{
-		cursor: pointer;
-	}
-
-	i#close-button{
-		position: fixed;
-		top:3%;
-		right:5%;
-
-		font-size: 5.4vw;
-		color:#D4AF37;
-	}
-
-	div.small-screen div.overlay{
-		/*only display on click*/
-		position: fixed;
-		top: 0;
-		left: 0;
-		width:100%;
-		height:100vh;
-
-		background-color: rgba(255,255,255,0.95);
-		overflow-y: hidden;
-	}
-
-	div.small-screen div.overlay ul{
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-	}
-
-	div.small-screen div.overlay ul li{
-		display: block;
-		width:100%;
-		font-size: 2em;
-	}
-
-	h1{
-		flex:80%;
-		font-size: 2em;
-	}
-
-	h2{
-		font-size: 2.4em;
-	}
-
-	p{
-		width:90%;
-		margin:auto;
-		font-family: "Kanit",sans-serif;
-		font-weight: bold;
-		font-size: 4vw;
-	}
-
-	.image:before{
-		font-size: 1.6em;
-	}
-
-}
-
-/******Medium screens********/
-
-@media (min-width: 700px) and (max-width: 1000px){
-	ul.large-screen{
-		display: none;
-	}
-
-	div.small-screen{
-		display: flex;
-		flex:20%;
-/*		align-content: center;
-*/		justify-content: center;
-		align-items: center;
-
-	}
-	i#menu-button{
-		font-size: 4vw;
-		color:#D4AF37;
-	}
-
-	i:hover{
-		cursor: pointer;
-	}
-
-	i#close-button{
-		position: fixed;
-		top:3%;
-		right:5%;
-
-		font-size: 4vw;
-		color:#D4AF37;
-	}
-
-	div.small-screen div.overlay{
-		/*only display on click*/
-		position: fixed;
-		top: 0;
-		left: 0;
-		width:100%;
-		height:100vh;
-
-		background-color: rgba(255,255,255,0.95);
-		overflow-y: hidden;
-	}
-
-	div.small-screen div.overlay ul{
-		width: 100%;
-		height: 100%;
-/*		margin:30% auto;
-*/		display: flex;
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-	}
-
-	div.small-screen div.overlay ul li{
-		display: block;
-		width:100%;
-		font-size: 2em;
-	}
-
-	h1{
-		flex:80%;
-		font-size: 2.2em;
-	}
-
-	p{
-		width:80%;
-		font-size: 2.8vw;
-	}
-
-	h2{
-		font-size: 2.8em;
-	}
-
-	.image:before{
-		font-size: 1.4em;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */
