@@ -40,6 +40,7 @@ function main(){
 }
 
 function openDropdown(id){
+
 	let dropdownId;
 	rows.forEach((row) =>{
 		row.ids.forEach((check) =>{
@@ -63,6 +64,7 @@ function openDropdown(id){
 }
 
 function closeDropdown(id){
+
 	let dropdownId;
 	rows.forEach((row) =>{
 		row.ids.forEach((check) =>{
@@ -107,15 +109,12 @@ function openClose(evt){
 		box = evt.target;
 	}
 
-	// console.log(box);
-
 	//check if the box is already open
 
 	if(box.classList.contains('selected')){
 		box.classList.remove('selected');
 		closeDropdown(box.id);
-		// let dropdown = box.querySelector('div.dropdown');
-		// dropdown.classList.remove('open');
+
 	}
 	else{
 		//if it's not then open the box
