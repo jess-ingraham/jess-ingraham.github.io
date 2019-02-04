@@ -12,8 +12,12 @@
   text-decoration: none;
 }
 
+body.nav-open {
+  overflow: hidden;
+}
+
 header {
-  height: 80vh;
+  height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header_image.jpg");
   background-position: center;
   background-size: cover;
@@ -36,7 +40,7 @@ header .main-header .about-me h1 {
   text-align: center;
   font-family: "Merriweather", serif;
   font-size: 4em;
-  padding: 2%;
+  padding: 2% 0;
   text-transform: uppercase;
 }
 header .main-header .about-me p {
@@ -50,13 +54,58 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  padding: 1%;
   background-color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: baseline;
+  border-bottom: 2px black solid;
 }
-nav .nav-dropdown {
+nav .main-nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+nav .main-nav h2 {
+  font-size: 2em;
+  font-family: "Merriweather", serif;
+  padding-left: 1%;
+  width: 50%;
+}
+nav .main-nav ul.nav-content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+nav .main-nav ul.nav-content div.dropbtn h3 {
+  width: auto;
+  display: flex;
+  font-size: 1.3em;
+}
+nav .main-nav ul.nav-content div.dropbtn h3:hover {
+  cursor: pointer;
+}
+nav .main-nav ul.nav-content div.dropbtn h3 i {
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  margin-left: 2%;
+}
+nav ul.nav-dropdown {
+  text-align: center;
+  margin-top: 1%;
+}
+nav ul.nav-dropdown.hidden {
+  display: none;
+}
+nav ul.nav-dropdown li {
+  padding: 0.8%;
+  font-size: 1.2em;
+}
+nav ul.nav-dropdown li:hover {
+  background-color: lightgray;
+}
+
+.hidden {
   display: none;
 }
 
@@ -75,9 +124,74 @@ nav .nav-dropdown {
   border-bottom: 2px solid black;
   padding: 1% 4%;
 }
+.content .box .info {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+.content .box .info .info-desc h3 {
+  font-size: 1.4em;
+  padding: 0.2% 0;
+}
+.content .box .info .info-desc h4 {
+  font-size: 1.2em;
+  text-decoration: underline;
+  padding: 0.5% 0;
+}
+.content .box .info .info-desc h4 i.fa-external-link-alt {
+  display: inline;
+  font-size: 1em;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.content .box .info .info-desc .date {
+  padding: 0.2% 0;
+}
+.content .box .info i.fa-angle-left {
+  width: auto;
+  font-size: 2.2em;
+  text-align: right;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.content .box .info i.fa-angle-left.rotated {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.content .box .info:hover {
+  cursor: pointer;
+}
 .content .box .description {
   display: block;
-  margin: 2% auto;
+  margin: 2% auto 0;
+  text-align: justify;
+}
+.content .box .hidden {
+  display: none;
+  height: auto;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 footer {

@@ -4,125 +4,86 @@ document.addEventListener('DOMContentLoaded', main);
 
 function main(){
 
-	fadeInHeader();
-
-//	document.querySelectorAll(".box h3, .box h4, p.date").forEach((box) =>{
-//		box.addEventListener('click', openClose, false);
-//	});
-}
-
-function openDropdown(id){
-
-	let dropdownId;
-	rows.forEach((row) =>{
-		row.ids.forEach((check) =>{
-			if(id === check){
-				dropdownId = row.rowId;
-			}
-		});
-	});
-
-	let desc;
-	content.forEach((check) =>{
-		if(check.id === id){
-			desc = check.cont;
-		}
-	});
-
-	let dropdown = document.querySelector("#"+ dropdownId);
-	dropdown.innerHTML = desc;
-
-	dropdown.classList.add('open');
-}
-
-function closeDropdown(id){
-
-	let dropdownId;
-	rows.forEach((row) =>{
-		row.ids.forEach((check) =>{
-			if(id === check){
-				dropdownId = row.rowId;
-			}
-		});
-	});
-
-	let dropdown = document.querySelector("#"+ dropdownId);
-	dropdown.innerHTML = '';
-
-	dropdown.classList.remove('open');	
-}
-
-function addSelect(box){
-	// want every other box besides the one that's clicked to close, then select the box
-
-	//remove the class from all the others
-	document.querySelectorAll(".box").forEach((other) =>{
-		if(other.classList.contains("selected")){
-			other.classList.remove("selected");
-			closeDropdown(other.id);
-			// other.querySelector('div.dropdown').classList.remove('open');
-		}
-	});
-	
-	box.classList.add("selected");
-	openDropdown(box.id);
-}
-
-
-function openClose(evt){
-	//check if the box is already open, if it is close it, if it's not then close the other box and open this one
-
-	//if the h3 element was selected, then set box to the parent element instead
-	let box;
-	if(evt.target.parentNode.classList.contains('box')){
-		box = evt.target.parentNode;
-	}
-	else{
-		box = evt.target;
-	}
-
-	//check if the box is already open
-
-	if(box.classList.contains('selected')){
-		box.classList.remove('selected');
-		closeDropdown(box.id);
-
-	}
-	else{
-		//if it's not then open the box
-		addSelect(box);
-	}
-
+    console.log("loaded");
+    
+    document.querySelectorAll(".box .info").forEach((box)=>{
+        box.addEventListener("click", toggleDropdown);
+    });
+    
+    document.querySelector("#courses").addEventListener("click", ()=>openMenuDrop("#courses"));
+    
+    document.querySelector("#personal").addEventListener("click", ()=>openMenuDrop("#personal"))
 
 }
 
-function fadeInHeader(){
+function openMenuDrop(id){
+    //check if the clicked one is already open and close it again
+    
+    if (!document.querySelector(id+"-drop").classList.contains("hidden")){
+        document.querySelector(id+"-drop").classList.add("hidden");
+        
+    }
+    
+    else{
+        //check if the other one is open and close it
 
-	let items = [];
-	items.push(document.querySelector('div.about_me'));
+        document.querySelectorAll(".nav-dropdown").forEach((drop)=>{
+            if (!drop.classList.contains("hidden")){
+                drop.classList.add("hidden");
+                changeArrow(document.querySelector("#"+drop.id.split("-")[0]));
+            }
+        });
 
-	document.querySelectorAll('div.images img').forEach((image)=>{
-		items.push(image);
-	});
+        //then open the appropriate dropdown
 
-	items.push(document.querySelector('div.pic-caption'));
-
-
-	items.forEach(function(item, index){
-		setTimeout(()=>{unfade(item)}, (1000 * index));
-	});
-
+        document.querySelector(id+"-drop").classList.remove("hidden");
+        
+    }
+    
+    changeArrow(document.querySelector(id));
+    
+    
+    
 }
 
-function unfade(element) {
-	var op = 0.1;  // initial opacity
-	element.style.display = 'block';
-	var timer = setInterval(function () {
-		if (op >= 1){
-			clearInterval(timer);
-		}
-		element.style.opacity = op;
-		element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-		op += op * 0.1;
-	}, 10);
+function toggleDropdown(evt){
+    
+    const box = getMainBox(evt.target);
+
+    box.classList.toggle("open");
+    
+    const desc = box.querySelector("div.description");
+    desc.classList.toggle("hidden");
+    
+    box.querySelector('i.fa-angle-left').classList.toggle("rotated");
+    
+    //changeArrow(box);
+}
+
+function changeArrow(box){
+    
+    const arrow = box.querySelector("i.fas");
+    
+    if(arrow.classList.contains("fa-angle-left")){
+        arrow.classList.remove("fa-angle-left");
+        arrow.classList.add("fa-angle-down");
+    }
+    
+    else if (arrow.classList.contains("fa-angle-down")){
+        arrow.classList.add("fa-angle-left");
+        arrow.classList.remove("fa-angle-down");
+    }
+    
+}
+
+function getMainBox(target){
+    let mainBox;
+    if (target.parentElement.classList.contains("info-desc")){
+        mainBox = target.parentElement.parentElement.parentElement; //the box objec that is the parent of what was clicked
+    }
+    else if(target.parentElement.classList.contains("info")){
+        mainBox = target.parentElement.parentElement;
+    }
+    
+    return mainBox;
 }
