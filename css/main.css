@@ -10,6 +10,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body.nav-open {
@@ -65,26 +66,31 @@ nav .main-nav {
   align-items: center;
 }
 nav .main-nav h2 {
-  font-size: 2em;
+  display: inline-block;
+  font-size: 1.6em;
   font-family: "Merriweather", serif;
   padding-left: 1%;
-  width: 50%;
+  width: 30%;
 }
 nav .main-nav ul.nav-content {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
+  width: 70%;
 }
-nav .main-nav ul.nav-content div.dropbtn h3 {
+nav .main-nav ul.nav-content li h3 {
   width: auto;
   display: flex;
+  align-items: center;
   font-size: 1.3em;
+  text-align: center;
+  padding: 0 1%;
 }
-nav .main-nav ul.nav-content div.dropbtn h3:hover {
+nav .main-nav ul.nav-content li h3:hover {
   cursor: pointer;
 }
-nav .main-nav ul.nav-content div.dropbtn h3 i {
+nav .main-nav ul.nav-content li h3 i {
   text-align: center;
   display: inline-block;
   width: auto;
@@ -143,8 +149,9 @@ nav ul.nav-dropdown li:hover {
 }
 .content .box .info .info-desc h4 {
   font-size: 1.2em;
-  text-decoration: underline;
   padding: 0.5% 0;
+  display: inline-block;
+  text-decoration: underline;
 }
 .content .box .info .info-desc h4 i.fa-external-link-alt {
   display: inline;
@@ -152,6 +159,9 @@ nav ul.nav-dropdown li:hover {
   width: auto;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+}
+.content .box .info .info-desc h4 span#space {
   text-decoration: none;
 }
 .content .box .info .info-desc .date {

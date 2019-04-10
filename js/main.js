@@ -10,7 +10,7 @@ function main(){
         box.addEventListener("click", toggleDropdown);
     });
     
-    document.querySelector("#courses").addEventListener("click", ()=>openMenuDrop("#courses"));
+    document.querySelector("#courseWork").addEventListener("click", ()=>openMenuDrop("#courseWork"));
     
     document.querySelector("#personal").addEventListener("click", ()=>openMenuDrop("#personal"))
 
